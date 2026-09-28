@@ -1,0 +1,13 @@
+# Uploaded work images (don't push to Git — they're unique to each server)
+uploads/*
+!uploads/.gitkeep
+
+# Config with real credentials (each server has its own)
+config/database.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
