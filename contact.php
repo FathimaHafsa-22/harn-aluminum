@@ -69,8 +69,8 @@ include 'includes/header.php';
                 <div style="font-size: 2.5rem; margin-bottom: 10px;">📞</div>
                 <h3>Call Us</h3>
                 <p style="color: var(--grey); margin-bottom: 15px;">Mon–Sat, 8 AM – 6 PM</p>
-                <a href="tel:+254712345678" style="color: var(--accent); font-weight: 600; text-decoration: none;">
-                    +254 712 345 678
+                <a href="tel:+94775651281" style="color: var(--accent); font-weight: 600; text-decoration: none;">
+                    +94 77 565 1281
                 </a>
             </div>
 

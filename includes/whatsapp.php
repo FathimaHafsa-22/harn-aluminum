@@ -1,12 +1,7 @@
 <?php
 
-// WhatsApp Contact Button
-// Change $whatsapp_number to the owner's real number
-// Format: country code + number, no + or spaces
-// Example Kenya: 254712345678
 
-
-$whatsapp_number = '254712345678';
+$whatsapp_number = '94775651281';
 
 $whatsapp_message = $whatsapp_message ?? 'Hello HARN Aluminum, I would like to inquire about your services.';
 $encoded_message = urlencode($whatsapp_message);

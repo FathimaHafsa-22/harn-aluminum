@@ -4,12 +4,11 @@ uploads/*
 
 # Config with real credentials (each server has its own)
 config/database.php
+config/database_live.pphp
 
 # OS files
 .DS_Store
-Thum
-config/database_live.php
-
+Thumbs.db
 
 # VS Code
 .vscode/
