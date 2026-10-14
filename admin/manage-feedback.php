@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/auth.php';
+if (!defined('BASE_URL')) define('BASE_URL', '/harn-aluminum');
 
 // Handle actions
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -59,7 +60,7 @@ while ($row = mysqli_fetch_assoc($count_q)) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews — HARN Aluminum Admin</title>
-    <link rel="stylesheet" href="/harn-aluminum/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/style.css">
     <style>
         .admin-nav {
             background: #1e3a5f; color: white; padding: 15px 30px;

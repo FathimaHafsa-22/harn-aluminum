@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/../config/database.php';
+if (!defined('BASE_URL')) define('BASE_URL', '/harn-aluminum');
 
 // If already logged in, redirect to dashboard
 if (isset($_SESSION['admin_id'])) {
@@ -40,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login — HARN Aluminum</title>
-    <link rel="stylesheet" href="/harn-aluminum/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/style.css">>
     <style>
         .login-wrapper {
             min-height: 100vh;

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/auth.php';
+if (!defined('BASE_URL')) define('BASE_URL', '/harn-aluminum');
 
 // Handle actions (mark as read/replied, delete)
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -33,7 +34,7 @@ $result = mysqli_query($conn, "SELECT * FROM inquiries ORDER BY created_at DESC"
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inquiries — HARN Aluminum Admin</title>
-    <link rel="stylesheet" href="/harn-aluminum/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/style.css">
     <style>
         .admin-nav {
             background: #1e3a5f; color: white; padding: 15px 30px;

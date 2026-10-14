@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/auth.php';
+if (!defined('BASE_URL')) define('BASE_URL', '/harn-aluminum');
 
 // Get counts for stats
 $works_count     = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c FROM works"))['c'];
@@ -12,7 +13,7 @@ $inquiries_new   = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS c 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard — HARN Aluminum Admin</title>
-    <link rel="stylesheet" href="/harn-aluminum/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>/assets/css/style.css">>
     <style>
         .admin-nav {
             background: #1e3a5f;
